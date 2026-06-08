@@ -7,7 +7,7 @@ Miembros del grupo:
 - Marcos Manduca 47.555.520
 - Hernan Sandroni
 - Raul Anriquen 43.309.071
-- Nicolas Alvarez Pacheco
+- Nicolas Alvarez Pacheco 46.744.923
 
 
 **1) Investigar y documentar críticas a los patrones de diseño. Mencione ejemplos concretos.**
