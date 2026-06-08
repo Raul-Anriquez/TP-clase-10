@@ -154,4 +154,33 @@ Cuando el canal publica un nuevo video mediante `subir_video()`, todos los suscr
 
 Implementación en `observer.py`
 
+Ejercicio 3 - Problemas cotidianos donde aplicar patrones de diseño
 
+*Preparación de una comida en la cocina:
+
+Problema
+Al cocinar distintas recetas, algunos pasos son muy similares, pero otros cambian según el plato que se vaya a preparar.
+
+Patrón aplicado: Template Method
+
+El patrón Template Method permite definir una estructura general para realizar una tarea, pero dejando que algunos pasos cambien según la necesidad. Por ejemplo:
+Para preparar una pizza → amasar, agregar ingredientes y hornear.
+Para preparar una hamburguesa → cocinar carne, agregar ingredientes y servir.
+
+*Pedido de comida por una aplicación
+Problema
+
+Un pedido pasa por distintas etapas: en preparación,enviado y recibido 
+
+Patrón aplicado: State (Estado)
+
+El patrón State permite que un objeto cambie su comportamiento según el estado en el que se encuentre. Por ejemplo, un pedido puede cambiar de acciones disponibles dependiendo de como se encuentre actualmente.
+
+*Notificaciones en red social
+Problema
+
+Una red social quiere que al subir un estado o foto los seguidores de ese usuario reciban un aviso de forma automática 
+
+Patrón aplicado: Observer (Observador)
+
+El patrón Observer permite que un objeto notifique automáticamente a otros cuando ocurre un cambio en su estado
