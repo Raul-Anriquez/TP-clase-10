@@ -231,9 +231,18 @@ Actiividad 4 - Distintos nombres de patrones de diseño
 | Template Method | Método plantilla | Define el esqueleto de un algoritmo en una superclase, pero permite que las subclases sobrescriban pasos del algoritmo sin cambiar su estructura. |
 | Visitor | Visitante | Permite separar algoritmos de los objetos sobre los que operan. |
 
-Actividad 5
-Un antipatrón es una solución que parece lógica o rápida en el momento, pero que a largo plazo genera problemas de mantenimiento, rendimiento o escalabilidad. Básicamente, son "malas prácticas" que se han vuelto comunes. Por ejemplo:
-Codigo espagueti: Es cuando la lógica del programa es tan enredada y carece de estructura que resulta imposible seguir el flujo de ejecución.
-El Objeto dios: Ocurre cuando una sola clase o archivo intenta realizar absolutamente todo en el sistema. Al tener demasiadas responsabilidades, cualquier cambio podría romper todo el código.
-El Hard Coding: Es la práctica de dejar valores críticos escritos directamente en el código fuente, como contraseñas o direcciones url. Esto vuelve al sistema rígido: si algo cambia, hay que modificar y recompilar el programa entero.
-Y por último el Flujo de Lava: Se refiere a la acumulación de código viejo, funciones o módulos intocables que nadie sabe para que sirven, pero que se mantienen por miedo a que el sistema falle.
+# Actividad 5
+
+Un **antipatrón** es una solución que parece lógica o rápida en el momento, pero que a largo plazo genera problemas de mantenimiento, rendimiento o escalabilidad. Básicamente, son **malas prácticas** que se han vuelto comunes en el desarrollo de software.
+
+### Código Espagueti (Spaghetti Code)
+Es cuando la lógica del programa está tan enredada y carece de estructura que resulta difícil seguir el flujo de ejecución, comprender el funcionamiento del sistema o realizar modificaciones sin introducir errores.
+
+### Objeto Dios (God Object)
+Ocurre cuando una sola clase, módulo o archivo intenta realizar prácticamente todas las tareas del sistema. Al concentrar demasiadas responsabilidades, cualquier cambio puede afectar múltiples funcionalidades y aumentar el riesgo de fallos.
+
+### Hard Coding
+Es la práctica de dejar valores críticos escritos directamente en el código fuente, como contraseñas, rutas de acceso o direcciones URL. Esto vuelve al sistema rígido y difícil de mantener, ya que cualquier cambio requiere modificar y recompilar el programa.
+
+### Flujo de Lava (Lava Flow)
+Se refiere a la acumulación de código antiguo, funciones o módulos que ya no se entienden completamente, pero que permanecen en el sistema porque existe el temor de que eliminarlos provoque errores o fallos inesperados.
