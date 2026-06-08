@@ -154,7 +154,7 @@ Cuando el canal publica un nuevo video mediante `subir_video()`, todos los suscr
 
 Implementación en `observer.py`
 
-Ejercicio 3 - Problemas cotidianos donde aplicar patrones de diseño
+Actividad 3 - Problemas cotidianos donde aplicar patrones de diseño
 
 *Preparación de una comida en la cocina:
 
@@ -185,29 +185,55 @@ Patrón aplicado: Observer (Observador)
 
 El patrón Observer permite que un objeto notifique automáticamente a otros cuando ocurre un cambio en su estado
 
-Ejercicio 4 - Distintos nombres de patrones de diseño
+Actiividad 4 - Distintos nombres de patrones de diseño
 
 
-Patrón| También llamado| Clasificación| Descripción
-Factory Method| Método fábrica, Constructor virtual| Creacional| Proporciona una interfaz para crear objetos en una superclase, permitiendo que las subclases modifiquen el tipo de objetos que se crearán.
-Abstract Factory| Fábrica abstracta| Creacional| Permite producir familias de objetos relacionados sin tener que especificar sus clases concretas.
-Builder| Constructor| Creacional| Permite construir objetos complejos paso a paso. Además, posibilita crear distintos tipos y representaciones de un objeto usando el mismo código de construcción.
-Prototype| Prototipo, Clon, Clone| Creacional| Permite copiar objetos existentes sin que el código dependa de sus clases concretas.
-Singleton| Instancia única| Creacional| Restringe la creación de objetos pertenecientes a una clase a un único objeto, asegurando que solo exista una única instancia del mismo.
-Adapter| Adaptador, Envoltorio, Wrapper| Estructural| Permite que objetos con interfaces incompatibles puedan colaborar entre sí.
-Bridge| Puente| Estructural| Permite dividir una clase grande o un conjunto de clases estrechamente relacionadas en dos jerarquías separadas que pueden desarrollarse de forma independiente.
-Composite| Objeto compuesto, Object Tree| Estructural| Permite tratar objetos individuales y composiciones de objetos de manera uniforme, siendo especialmente útil para estructuras dinámicas en forma de árbol.
-Decorator| Decorador, Envoltorio, Wrapper| Estructural| Permite integrar más funciones o comportamientos en clases ya existentes.
-Facade| Fachada| Estructural| Proporciona una interfaz simplificada para interactuar con sistemas y subsistemas complejos.
-Flyweight| Peso mosca, Peso ligero, Cache| Estructural| Permite mantener más objetos dentro de la cantidad disponible de RAM compartiendo las partes comunes del estado entre varios objetos, en lugar de mantener toda la información en cada objeto.
-Proxy| Sustituto, Marcador de posición| Estructural| Permite proporcionar un sustituto o marcador de posición para otro objeto. Un proxy controla el acceso al objeto original, permitiendo realizar acciones antes o después de que la solicitud llegue al objeto original.
-Chain of Responsibility| Cadena de responsabilidad, CoR, Chain of Command| Comportamiento| Permite pasar solicitudes a lo largo de una cadena de manejadores. Al recibir una solicitud, cada manejador decide si la procesa o si la pasa al siguiente manejador de la cadena.
-Command| Comando, Orden, Action, Transaction| Comportamiento| Convierte una solicitud en un objeto independiente que contiene toda la información sobre ella. Esta transformación permite parametrizar métodos con diferentes solicitudes, retrasar o poner en cola su ejecución y soportar operaciones que no se pueden realizar.
-Iterator| Iterador| Comportamiento| Permite recorrer los elementos de una colección sin exponer su representación subyacente.
-Mediator| Mediador, Intermediary, Controller| Comportamiento| Permite reducir las dependencias caóticas entre objetos. El patrón restringe las comunicaciones directas entre ellos, forzándolos a colaborar únicamente a través de un objeto que funciona como mediador.
-Memento| Recuerdo, Instantánea, Snapshot| Comportamiento| Permite guardar y restaurar el estado previo de un objeto sin revelar los detalles de su implementación.
-Observer| Observador, Publicación-Suscripción, Modelo-patrón, Event-Subscriber, Listener| Comportamiento| Permite definir un mecanismo de suscripción para notificar a varios objetos sobre cualquier evento que ocurra en el objeto que está siendo observado.
-State| Estado| Comportamiento| Permite a un objeto cambiar su comportamiento cuando su estado interno cambia.
-Strategy| Estrategia| Comportamiento| Permite definir un grupo de algoritmos, colocarlos en clases separadas y hacer sus objetos intercambiables.
-Template Method| Método plantilla| Comportamiento| Define el esqueleto de un algoritmo en una superclase, pero permite que las subclases sobrescriban pasos del algoritmo sin cambiar su estructura.
-Visitor| Visitante| Comportamiento| Permite separar algoritmos de los objetos sobre los que operan.
+# Patrones de Diseño
+
+## Patrones Creacionales
+
+| Patrón | También llamado | Descripción |
+|---------|----------------|-------------|
+| Factory Method | Método fábrica, Constructor virtual | Proporciona una interfaz para crear objetos en una superclase, permitiendo que las subclases modifiquen el tipo de objetos que se crearán. |
+| Abstract Factory | Fábrica abstracta | Permite producir familias de objetos relacionados sin tener que especificar sus clases concretas. |
+| Builder | Constructor | Permite construir objetos complejos paso a paso. Además, posibilita crear distintos tipos y representaciones de un objeto usando el mismo código de construcción. |
+| Prototype | Prototipo, Clon, Clone | Permite copiar objetos existentes sin que el código dependa de sus clases concretas. |
+| Singleton | Instancia única | Restringe la creación de objetos pertenecientes a una clase a un único objeto, asegurando que solo exista una única instancia del mismo. |
+
+---
+
+## Patrones Estructurales
+
+| Patrón | También llamado | Descripción |
+|---------|----------------|-------------|
+| Adapter | Adaptador, Envoltorio, Wrapper | Permite que objetos con interfaces incompatibles puedan colaborar entre sí. |
+| Bridge | Puente | Permite dividir una clase grande o un conjunto de clases estrechamente relacionadas en dos jerarquías separadas que pueden desarrollarse de forma independiente. |
+| Composite | Objeto compuesto, Object Tree | Permite tratar objetos individuales y composiciones de objetos de manera uniforme, siendo especialmente útil para estructuras dinámicas en forma de árbol. |
+| Decorator | Decorador, Envoltorio, Wrapper | Permite integrar más funciones o comportamientos en clases ya existentes. |
+| Facade | Fachada | Proporciona una interfaz simplificada para interactuar con sistemas y subsistemas complejos. |
+| Flyweight | Peso mosca, Peso ligero, Cache | Permite mantener más objetos dentro de la cantidad disponible de RAM compartiendo las partes comunes del estado entre varios objetos, en lugar de mantener toda la información en cada objeto. |
+| Proxy | Sustituto, Marcador de posición | Permite proporcionar un sustituto o marcador de posición para otro objeto. Un proxy controla el acceso al objeto original, permitiendo realizar acciones antes o después de que la solicitud llegue al objeto original. |
+
+---
+
+## Patrones de Comportamiento
+
+| Patrón | También llamado | Descripción |
+|---------|----------------|-------------|
+| Chain of Responsibility | Cadena de responsabilidad, CoR, Chain of Command | Permite pasar solicitudes a lo largo de una cadena de manejadores. Al recibir una solicitud, cada manejador decide si la procesa o si la pasa al siguiente manejador de la cadena. |
+| Command | Comando, Orden, Action, Transaction | Convierte una solicitud en un objeto independiente que contiene toda la información sobre ella. Esta transformación permite parametrizar métodos con diferentes solicitudes, retrasar o poner en cola su ejecución y soportar operaciones que no se pueden realizar. |
+| Iterator | Iterador | Permite recorrer los elementos de una colección sin exponer su representación subyacente. |
+| Mediator | Mediador, Intermediary, Controller | Permite reducir las dependencias caóticas entre objetos. El patrón restringe las comunicaciones directas entre ellos, forzándolos a colaborar únicamente a través de un objeto que funciona como mediador. |
+| Memento | Recuerdo, Instantánea, Snapshot | Permite guardar y restaurar el estado previo de un objeto sin revelar los detalles de su implementación. |
+| Observer | Observador, Publicación-Suscripción, Modelo-patrón, Event-Subscriber, Listener | Permite definir un mecanismo de suscripción para notificar a varios objetos sobre cualquier evento que ocurra en el objeto que está siendo observado. |
+| State | Estado | Permite a un objeto cambiar su comportamiento cuando su estado interno cambia. |
+| Strategy | Estrategia | Permite definir un grupo de algoritmos, colocarlos en clases separadas y hacer sus objetos intercambiables. |
+| Template Method | Método plantilla | Define el esqueleto de un algoritmo en una superclase, pero permite que las subclases sobrescriban pasos del algoritmo sin cambiar su estructura. |
+| Visitor | Visitante | Permite separar algoritmos de los objetos sobre los que operan. |
+
+Actividad 5
+Un antipatrón es una solución que parece lógica o rápida en el momento, pero que a largo plazo genera problemas de mantenimiento, rendimiento o escalabilidad. Básicamente, son "malas prácticas" que se han vuelto comunes. Por ejemplo:
+Codigo espagueti: Es cuando la lógica del programa es tan enredada y carece de estructura que resulta imposible seguir el flujo de ejecución.
+El Objeto dios: Ocurre cuando una sola clase o archivo intenta realizar absolutamente todo en el sistema. Al tener demasiadas responsabilidades, cualquier cambio podría romper todo el código.
+El Hard Coding: Es la práctica de dejar valores críticos escritos directamente en el código fuente, como contraseñas o direcciones url. Esto vuelve al sistema rígido: si algo cambia, hay que modificar y recompilar el programa entero.
+Y por último el Flujo de Lava: Se refiere a la acumulación de código viejo, funciones o módulos intocables que nadie sabe para que sirven, pero que se mantienen por miedo a que el sistema falle.
