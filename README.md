@@ -5,7 +5,7 @@ Comisión 3 - Programación Avanzada
 Miembros del grupo:
 
 - Marcos Manduca 47.555.520
-- Hernan Sandroni
+- Hernan Sandroni 42.283.987
 - Raul Anriquen 43.309.071
 - Nicolas Alvarez Pacheco 46.744.923
 
